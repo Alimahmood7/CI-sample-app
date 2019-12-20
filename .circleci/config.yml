@@ -3,7 +3,7 @@ jobs:
   build:
     working_director: ~/tmp
     docker:
-        - image: circle/node:7
+        - image: circleci/node:10-alpine
     steps:
         - checkout 
         - run: yarn
