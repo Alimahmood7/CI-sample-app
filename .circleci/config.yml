@@ -1,9 +1,9 @@
 version: 2
 jobs: 
- build:
+  build:
     working_director: ~/tmp
     docker:
-        -image: circle/node:10.17.0
+        - image: circle/node:10.17.0
     steps:
         - checkout 
         - run: yarn
